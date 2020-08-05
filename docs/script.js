@@ -42,7 +42,7 @@ submitButton.addEventListener('click', async function (event) {
 
     if (phoneNumbers.length === 0 || textMessage.length === 0) {
 
-        return alert('apikey, phone numbers and text message must be entered');
+        return alert('phone numbers and text message must be entered');
 
     }
 
