@@ -24,7 +24,7 @@ const sendSMS = async (apiKey, phoneNumbers, textMessage) => {
             body
         });
 
-        return { data: await sendSMSResponse.json() };
+        return { data: 'done correctly' };
 
     } catch (error) {
 
