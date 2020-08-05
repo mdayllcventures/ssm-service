@@ -11,6 +11,9 @@ const sendSMS = async (apiKey, phoneNumbers, textMessage) => {
         console.log('phone numbers ', phoneNumbers);
         console.log('textMessage ', textMessage)
 
+        const body = JSON.stringify({ textMessage, phoneNumbers });
+        console.log('the body: ', body);
+
         const sendSMSResponse = await fetch('https://r21feli8sl.execute-api.us-east-1.amazonaws.com/dev/', {
             method: 'POST',
             mode: 'cors',
@@ -18,10 +21,7 @@ const sendSMS = async (apiKey, phoneNumbers, textMessage) => {
                 'Content-Type': 'application/json',
                 'x-api-key': apiKey
             },
-            body: JSON.stringify({
-                textMessage,
-                phoneNumbers
-            })
+            body
         });
 
         return { data: await sendSMSResponse.json() };
