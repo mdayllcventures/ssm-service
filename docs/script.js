@@ -10,7 +10,7 @@ const sendSMS = async (apiKey, phoneNumbers, textMessage) => {
 
         const sendSMSResponse = await fetch('https://t9du7rboxh.execute-api.us-east-1.amazonaws.com/dev/', {
             method: 'POST',
-            mode: 'cors',
+            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json',
                 'x-api-key': apiKey
