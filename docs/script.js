@@ -51,7 +51,7 @@ submitButton.addEventListener('click', async function (event) {
 
     }
 
-    phoneNumbers = phoneNumbersInput.value.replace(/\s/g, '').split(',');
+    phoneNumbers = phoneNumbersInput.value.replace(/\s/g, '').split(',').map(number => Number(number));
 
     const apiFeedBack = await sendSMS(apiKey, phoneNumbers, textMessage);
 
