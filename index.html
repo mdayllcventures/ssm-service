@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='container'>
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <span class="navbar-brand mb-0 h1">Send SMS App</span>
+            </nav>
+        </header>
+
+        <main style="margin-top: 50px;">
+            <form>
+                <div class="form-group">
+                    <label for="comment">API Key</label>
+                    <input class="form-control" id="api">
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Phone Numbers: e.g 9047897642,9046257771</label>
+                    <textarea class="form-control" rows="5" id="phone" name="text"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Text Message</label>
+                    <textarea class="form-control" rows="5" id="sms" name="text"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger">Send SMS</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
