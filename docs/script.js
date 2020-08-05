@@ -8,6 +8,8 @@ const sendSMS = async (apiKey, phoneNumbers, textMessage) => {
 
     try {
 
+        console.log(phoneNumbers);
+
         const sendSMSResponse = await fetch('https://r21feli8sl.execute-api.us-east-1.amazonaws.com/dev/', {
             method: 'POST',
             mode: 'cors',
